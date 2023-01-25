@@ -39,11 +39,6 @@ module.exports = {
       const typeCity = provinceCity.data.rajaongkir.results.type;
       const nameCityandType = `${typeCity} ${nameCity}`;
 
-      // console.log("district", district);
-      // console.log("nameCityandType", nameCityandType);
-      // console.log("nameProvince", nameProvince);
-      // console.log("provinceCity", provinceCity.data.rajaongkir);
-
       // const loc = await axios.get(
       //   `https://api.opencagedata.com/geocode/v1/json?key=68f87966800b43798eb35464340ee809&q=${district},${nameCityandType},${nameProvince}`,
       // );
@@ -54,7 +49,9 @@ module.exports = {
       const response = await address.create({
         addressFill,
         province: nameProvince,
+        provinceId: province,
         city: nameCityandType,
+        cityId: city,
         postal_code,
         detail,
         district,

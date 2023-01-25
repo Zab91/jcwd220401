@@ -25,6 +25,9 @@ module.exports = (sequelize, DataTypes) => {
       stock: {
         type: DataTypes.INTEGER,
       },
+      type: {
+        type: DataTypes.STRING,
+      },
       discount_id: {
         type: DataTypes.INTEGER,
       },

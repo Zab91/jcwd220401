@@ -14,7 +14,7 @@ axios.defaults.baseRajaongkir = `https://api.rajaongkir.com/starter`;
 axios.defaults.headers.common["key"] = `346809ad5e1954b3e5747406586c819f`;
 axios.defaults.headers.post[
   "Content-Type"
-] = `application/x-www-form-urlencoded`;
+] = `application/x-www-form-urlencoded`
 
 router.get("/province", async function (req, res) {
   try {

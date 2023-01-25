@@ -20,6 +20,7 @@ import CartDetail from "./components/CartComp";
 import { ListAddressUser } from "./components/listAddressUser";
 import { AddAddress } from "./components/addAddress";
 import { UpdateAddress } from "./components/updateAddress";
+import SelectAddress from "./components/addressSelect";
 import SendEmailPassword from "./pages/SendEmailPage";
 import ResetPassword from "./pages/ResetPassword";
 
@@ -107,6 +108,10 @@ function App() {
     <div style={bodyStyle}>
       <div style={myStyle}>
         <Routes>
+          <Route
+            path="/selectAddress"
+            element={<SelectAddress />}
+          />
           <Route
             path="/profile"
             element={<UserProfile />}

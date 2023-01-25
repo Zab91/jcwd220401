@@ -33,8 +33,13 @@ module.exports = (sequelize, DataTypes) => {
       province: {
         type: DataTypes.STRING,
       },
-
+      provinceId: {
+        type: DataTypes.STRING,
+      },
       city: {
+        type: DataTypes.STRING,
+      },
+      cityId: {
         type: DataTypes.STRING,
       },
     },
